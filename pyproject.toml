@@ -1,0 +1,24 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "bpe-lite"
+version = "0.1.0"
+description = "A lightweight Byte Pair Encoding (BPE) tokenizer built from scratch."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [
+    { name = "Trinanjan Mitra", email = "mtrinanjan@gmail.com" }
+]
+dependencies = [
+    "regex>=2023.12.25"
+]
+
+[project.scripts]
+bpe-train = "bpe_lite.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/mtrino/bpe-lite"
+Issues = "https://github.com/mtrino/bpe-lite/issues"

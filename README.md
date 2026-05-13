@@ -103,5 +103,11 @@ for token_id in tokenizer.encode_iterable(text_stream()):
 ## 📚 Acknowledgments
 This repository was built as an educational exercise inspired by **Stanford CS336: Language Modeling from Scratch**. It serves as a practical demonstration of how modern LLM tokenizers (like OpenAI's `tiktoken`) operate under the hood.
 
+## 🗺 Roadmap
+- [x] Initial BPE implementation (CS336-inspired)
+- [x] PyPI packaging and CLI
+- [ ] Add unit tests (pytest) for round-trip encoding and special tokens
+- [ ] Add support for custom regex patterns
+
 ## 📄 License
 This project is licensed under the [MIT License](LICENSE).
